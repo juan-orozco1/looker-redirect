@@ -3,10 +3,20 @@
 <head>
     <title>Redirecting...</title>
     <script>
-        window.location.replace("https://lookerstudio.google.com/reporting/8d605035-e00e-490d-a33e-2a7bfa10e01f");
+        const oldURL = "https://lookerstudio.google.com/reporting/48d92795-cd2d-440f-8f8d-721f8db25b5f";
+        const newURL = "https://lookerstudio.google.com/reporting/8d605035-e00e-490d-a33e-2a7bfa10e01f";
+        // Perform the redirect
+        window.location.replace"https://lookerstudio.google.com/reporting/8d605035-e00e-490d-a33e-2a7bfa10e01f";
     </script>
 </head>
 <body>
-    <p>You are being redirected to the new dashboard...</p>
+    <p>You are being redirected from the old dashboard to the new dashboard...</p>
+    <p>Old Dashboard URL: <span id="old-url-display"></span></p>
+    <p>New Dashboard URL: <span id="new-url-display"></span></p>
+
+    <script>
+        document.getElementById("old-url-display").textContent = oldURL;
+        document.getElementById("new-url-display").textContent = newURL;
+    </script>
 </body>
 </html>
